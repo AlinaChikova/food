@@ -1,0 +1,38 @@
+.card {
+	width: 230px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__name {
+		font:  20px Arial, sans-serif;
+		line-height: 50px;
+		border-bottom: 2px solid #767675;
+		width: 100%;
+		text-align: center;
+	}
+
+	
+
+}
+
+
+.market_image {
+	height: 60px;
+};
+
+.product {
+	border-radius: 50%;
+	background-color: white;
+	border: 15px solid #ffc000;
+	width: 200px;
+	height: 200px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+
+	&__image {
+		height: 175px;
+	}
+}; 
+

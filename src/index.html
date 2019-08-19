@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            <%= htmlWebpackPlugin.options.title %>
+        </title>
+        <script src="https://kit.fontawesome.com/ddd4a66385.js"></script>
+    </head>
+    <body>
+        <header>
+            <span class="header">сделайте заказ напрямую из ресторана</span>
+        </header>
+        <main>
+            <div class="left">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Блины</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Шаурма</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Сендвичи</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Бургеры</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Курица&amp;Картофель</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Тортилья&amp;Салаты</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Напитки&amp;Десерты</a>
+                    </li>
+                </ul>
+               
+                <div class="basket basket__left">
+                    <div class="basket__logo">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>Корзина</p>
+                    </div>
+                   <div class="wrap"> 
+
+                        <div class="list">
+                            <div>
+                                <p>Название</p>
+                                <p>Количество</p>
+                            </div>
+                               <div>
+                                <p>aaaa</p>
+                                <p>ssss</p>
+                            </div>
+                        </div>
+                        <span class="sum">Итого: 0 руб.</span>
+                        <button class="checkout">Оформить заказ</button>
+                 </div>
+                </div>
+            </div>
+            <div class="frontpage">
+
+           <!--      генерировать карточки -->
+                <div class="card">
+                    <div class="market">
+                        <img class="market_image" src="./images/markets/subway_logo.png" alt="market">
+
+                    </div>
+                    <div class="product">
+                        <img class="product__image" src="images/burgers/sloppyjo.png" alt="image">
+                    </div> 
+                    <div class="card__name">Овощной</div>
+                    <div class="card__description">Соус и овощи на выбор</div>
+                    <div class="card__price">Цена: 110 руб.</div>
+                    <div class="number">
+                        <p>количество</p>
+                        <button class="number__button-minus">-</button>
+                        <div class="number__window"></div>
+                        <button class="number__button-minus">+</button>
+                    </div>
+                    <button class="card__add">в корзину</button>
+                </div>
+
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+$yellow: #ffcd33;
+
+
+.menu {
+	background: white;
+	font:  20px Arial, sans-serif;
+	font-stretch: condensed;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	border-radius: 7px;
+	box-shadow:0 0 10px 1px grey;
+
+	&__item {
+		height: 50px;
+		text-align: center;
+		vertical-align: middle;
+
+		&:first-child a {
+			border-top-right-radius: 7px; 
+			border-top-left-radius: 7px; 
+		}
+		&:last-child a {
+			border-bottom-right-radius: 7px; 
+			border-bottom-left-radius: 7px; 
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		display: block;
+		color: black;
+		padding: 14px 0 14px 0;	
+
+		&:hover {
+			color: white;
+			background-color: $yellow;
+		}
+	}
+};
+

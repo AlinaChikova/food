@@ -1,0 +1,26 @@
+html {
+	height: 100%;
+	background-color: #edebea;
+	background-image: ('../images/2df07c6c4542793e22956d125c320367.jpg')
+};
+
+main {
+	display: flex;
+	justify-content: space-around;
+
+};
+
+header {
+	text-align: center;
+};
+
+ 
+.left {
+	width: 300px;
+};
+
+.frontpage {
+	width: auto;
+	min-width: 500px;
+	padding: 20px;
+};
