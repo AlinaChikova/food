@@ -5,14 +5,16 @@
         <title>
             test
         </title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/ddd4a66385.js"></script>
-    <link href="style.css?58d23cc716274627360c" rel="stylesheet"></head>
+    <link href="style.css?8518f1db2af1945e28f3" rel="stylesheet"></head>
     <body>
         <header>
             <span class="header">сделайте заказ напрямую из ресторана</span>
         </header>
         <main>
             <div class="left">
+
                 <ul class="menu">
                     <li class="menu__item">
                         <a class="menu__link" href="">Блины</a>
@@ -27,13 +29,13 @@
                         <a class="menu__link" href="">Бургеры</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="">Курица&amp;Картофель</a>
+                        <a class="menu__link" href="">Курица &amp; Картофель</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="">Тортилья&amp;Салаты</a>
+                        <a class="menu__link" href="">Тортилья &amp; Салаты</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="">Напитки&amp;Десерты</a>
+                        <a class="menu__link" href="">Напитки &amp; Десерты</a>
                     </li>
                 </ul>
                
@@ -42,41 +44,53 @@
                         <i class="fas fa-shopping-basket"></i>
                         <p>Корзина</p>
                     </div>
-                   <div class="wrap"> 
-                        <table class="list">
-                            <tr><th>Название</th><th>Количество</th></tr>
-                            <tr><td>aaaaa</td><td>aaaaa</td></tr>
-                                <tr><td>aaaaa</td><td>aaaaa</td></tr>
-                                    <tr><td>aaaaa</td><td>aaaaa</td></tr>
-                        </table>
+                   <div class="wrap-basket"> 
+                        <div class="list">
+                            <div>
+                                <p>Название</p>
+                                <p>Количество</p>
+                            </div>
+                            <div>
+                                <p>aaaa</p>
+                                <p>ssss</p>
+                            </div>
+
+                        </div>
                         <span class="sum">Итого: 0 руб.</span>
                         <button class="checkout">Оформить заказ</button>
-                 </div>
+                    </div>
                 </div>
             </div>
-            <div class="frontpage">
 
+            <div class="frontpage">
            <!--      генерировать карточки -->
                 <div class="card">
                     <div class="market">
-                        <img class="market_image" src="./images/logo.jpg" alt="market">
-
+                        <img class="market_image" src="./images/markets/subway_logo.png" alt="market">
                     </div>
                     <div class="product">
-                        <img class="product__image" src="" alt="image">
+                        <img class="product__image" src="images/burgers/sloppyjo.png" alt="image">
                     </div> 
-                    <div class="card__name"></div>
-                    <div class="card__description"></div>
-                    <div class="card__price"></div>
-                    <div class="number">
-                        <button class="number__button-minus"></button>
-                        <div class="number__window"></div>
-                        <button class="number__button-minus"></button>
+                    <div class="card__name">Овощной</div>
+                    <div class="card__description">
+                        <a href="">Соус и овощи на выбор</a>
                     </div>
-                    <button class="card__add"></button>
+                    <div class="card__price">Цена: 110 руб.</div>
+                    <div class="number">
+                        <p>количество</p>
+                        <div class="number__wrap">
+                            <button class="number__button minus"><i class="fas fa-minus"></i></button>
+                            <div class="number__window">1</div>
+                            <button class="number__button plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="add-wrap">
+                        <button class="card__add">в корзину</button>
+                    </div>
                 </div>
 
             </div>
+
         </main>
-    <script type="text/javascript" src="bundle.js?58d23cc716274627360c"></script></body>
+    <script type="text/javascript" src="bundle.js?8518f1db2af1945e28f3"></script></body>
 </html>

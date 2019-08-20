@@ -1,4 +1,4 @@
-$yellow: #ffcd33;
+$link-hover: #ffcd33;
 
 
 .menu {
@@ -23,8 +23,8 @@ $yellow: #ffcd33;
 		&:last-child a {
 			border-bottom-right-radius: 7px; 
 			border-bottom-left-radius: 7px; 
-		}
-	}
+		};
+	};
 
 	&__link {
 		text-decoration: none;
@@ -34,8 +34,8 @@ $yellow: #ffcd33;
 
 		&:hover {
 			color: white;
-			background-color: $yellow;
-		}
-	}
+			background-color: $link-hover;
+		};
+	};
 };
 

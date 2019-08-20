@@ -1,23 +1,30 @@
 html {
   height: 100%;
-  background-color: #edebea; }
+  background-color: #edebea;
+  background: url(https://image.freepik.com/free-photo/_7182-2053.jpg);
+  background-repeat: repeat;
+  background-size: 100%; }
 
 main {
   display: flex;
-  justify-content: space-around; }
+  justify-content: center; }
 
 header {
   text-align: center; }
 
 .left {
-  width: 300px; }
+  width: 230px;
+  margin-left: 30px; }
 
 .frontpage {
-  width: auto;
-  min-width: 500px; }
+  flex-wrap: wrap;
+  flex-basis: auto;
+  display: flex;
+  padding-left: 40px; }
 header {
   width: 100%;
-  height: 75px;
+  min-height: 75px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -63,13 +70,15 @@ header {
   background-color: #ffc000;
   height: 65px;
   color: white;
-  font-size: 2em;
+  font-size: 2.0em;
   display: flex;
   align-items: center;
+  font-family: 'Roboto Slab', serif;
   justify-content: space-evenly;
-  box-shadow: 0 0 2px 1px #c4a547; }
+  box-shadow: 0 0 2px 1px #c4a547;
+  text-shadow: 0 1px 1px #c59400; }
 
-.wrap {
+.wrap-basket {
   display: flex;
   flex-direction: column;
   min-height: 120px;
@@ -77,25 +86,21 @@ header {
   align-content: center;
   align-items: center;
   font-size: 14px;
-  padding: 10px 15px 25px 15px; }
+  padding: 0px 15px 25px 15px; }
 
 .list {
-  border-collapse: collapse;
-  min-width: 220px;
-  width: auto; }
-  .list th {
-    font-weight: normal; }
-    .list th:last-child {
-      text-align: right; }
-    .list th:first-child {
-      text-align: left; }
-  .list tr {
-    height: 30px;
-    border-bottom: 2px solid #ffae00; }
-  .list td:last-child {
-    text-align: right; }
-  .list td:first-child {
-    text-align: left; }
+  display: flex;
+  font-family: 'Roboto Slab', serif;
+  flex-direction: column;
+  width: 205px; }
+  .list div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ffae00;
+    height: 40px;
+    align-items: center; }
+    .list div p {
+      margin: 0; }
 
 .sum {
   line-height: 45px; }
@@ -109,11 +114,102 @@ header {
   border-bottom: 2px solid #122835;
   height: 35px;
   width: 170px;
-  padding: 0; }
+  padding: 0;
+  font-weight: bold; }
   .checkout::-moz-focus-inner {
     border: 0; }
-  .checkout:focus {
-    /* outline: none; */ }
 
 .basket__left {
   margin-top: 30px; }
+.card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 30px 20px; }
+  .card__name {
+    font: 20px Arial, sans-serif;
+    line-height: 50px;
+    width: 100%;
+    text-align: center; }
+  .card__description {
+    height: 55px;
+    border-bottom: 2px solid #767675;
+    border-top: 2px solid #767675;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px; }
+    .card__description a {
+      border-bottom: 2px solid #118ac2;
+      color: #118ac2;
+      text-decoration: none;
+      font: 15px Arial, sans-serif;
+      font-weight: bold; }
+  .card__price {
+    color: #e76752;
+    font: bold 18px Arial, sans-serif;
+    line-height: 35px; }
+
+.market_image {
+  height: 60px; }
+
+.product {
+  border-radius: 50%;
+  background-color: white;
+  border: 10px solid #ffc000;
+  width: 180px;
+  height: 180px;
+  align-items: center;
+  justify-content: center;
+  display: flex; }
+  .product__image {
+    height: 160px; }
+
+.card__add {
+  height: 30px;
+  width: 130px;
+  color: white;
+  background-color: #ffc000;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 2px solid #664d00;
+  font-weight: bold; }
+  .card__add::-moz-focus-inner {
+    border: 0; }
+
+.add-wrap {
+  padding-top: 15px; }
+.number {
+  width: 100%; }
+  .number p {
+    margin: 0px;
+    font: 12px Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px; }
+  .number__wrap {
+    display: flex;
+    justify-content: space-evenly; }
+  .number__window {
+    width: 45px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 1px 1px #bfbebc;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 5px; }
+  .number__button {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    padding: 0;
+    box-shadow: 0px 0px 1px 1px #bfbebc; }
+    .number__button::-moz-focus-inner {
+      border: 0; }
+    .number__button i {
+      font-size: 17px;
+      color: #cbcac9; }

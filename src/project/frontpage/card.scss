@@ -1,38 +1,85 @@
+$description-color: #767675;
+$description-link-color: #118ac2;
+$card-color: #ffc000;
+$price-color: #e76752;
+$add-border-color: #664d00;
+
 .card {
-	width: 230px;
+	width: 200px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 0 20px 30px 20px;
 
 	&__name {
 		font:  20px Arial, sans-serif;
 		line-height: 50px;
-		border-bottom: 2px solid #767675;
 		width: 100%;
 		text-align: center;
-	}
+	};
 
-	
+	&__description {
+		height: 55px;
+		border-bottom: 2px solid $description-color;
+		border-top: 2px solid $description-color;
+		width: 100%;
+		text-align: center;
+		padding-top: 5px;
 
-}
+		a {
+			border-bottom: 2px solid $description-link-color;
+			color: $description-link-color;
+			text-decoration: none;
+			font: 15px Arial, sans-serif;	
+			font-weight: bold;
+		};
+	};
 
+	&__price {
+		color: $price-color;
+		font:  bold 18px Arial, sans-serif;
+		line-height: 35px;
+	};
+
+
+};
 
 .market_image {
 	height: 60px;
+
 };
 
 .product {
 	border-radius: 50%;
 	background-color: white;
-	border: 15px solid #ffc000;
-	width: 200px;
-	height: 200px;
+	border: 10px solid $card-color;
+	width: 180px;
+	height: 180px;
 	align-items: center;
 	justify-content: center;
 	display: flex;
 
 	&__image {
-		height: 175px;
-	}
+		height: 160px;
+		
+	};
 }; 
 
+.card__add {
+	height: 30px;
+	width: 130px;
+	color: white;
+	background-color: $card-color;
+	border-radius: 3px;
+	text-transform: uppercase;
+	border: none;
+	border-bottom: 2px solid $add-border-color;
+	font-weight: bold;
+		&::-moz-focus-inner {
+	 	border: 0;
+	};
+};
+
+.add-wrap {
+	padding-top: 15px;
+}

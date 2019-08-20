@@ -1,6 +1,7 @@
 header {
 	width: 100%;
-	height: 75px;
+	min-height: 75px;
+	height: auto;
 	display: flex;
 	justify-content: center;		
 	align-items: center;
@@ -10,5 +11,4 @@ header {
 	text-transform: uppercase;
 	font:  40px Arial, sans-serif;
 	color: #444444;
-
-}
+};
