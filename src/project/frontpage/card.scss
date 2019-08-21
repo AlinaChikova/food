@@ -1,3 +1,5 @@
+@import "number.scss";
+
 $description-color: #767675;
 $description-link-color: #118ac2;
 $card-color: #ffc000;
@@ -16,7 +18,7 @@ $add-border-color: #664d00;
 		line-height: 50px;
 		width: 100%;
 		text-align: center;
-	};
+	}
 
 	&__description {
 		height: 55px;
@@ -32,16 +34,14 @@ $add-border-color: #664d00;
 			text-decoration: none;
 			font: 15px Arial, sans-serif;	
 			font-weight: bold;
-		};
-	};
+		}
+	}
 
 	&__price {
 		color: $price-color;
 		font:  bold 18px Arial, sans-serif;
 		line-height: 35px;
-	};
-
-
+	}
 };
 
 .market_image {
@@ -53,6 +53,7 @@ $add-border-color: #664d00;
 	border-radius: 50%;
 	background-color: white;
 	border: 10px solid $card-color;
+	box-shadow: 0 0 5px grey;
 	width: 180px;
 	height: 180px;
 	align-items: center;
@@ -60,8 +61,9 @@ $add-border-color: #664d00;
 	display: flex;
 
 	&__image {
-		height: 160px;
-		
+		height: 160px;	
+		width: 160px;	
+		border-radius: 50%;	
 	};
 }; 
 
@@ -75,11 +77,14 @@ $add-border-color: #664d00;
 	border: none;
 	border-bottom: 2px solid $add-border-color;
 	font-weight: bold;
-		&::-moz-focus-inner {
+	padding: 0;
+	box-shadow: 0 0 5px grey;
+
+	&::-moz-focus-inner {
 	 	border: 0;
-	};
+	}
 };
 
 .add-wrap {
 	padding-top: 15px;
-}
+};

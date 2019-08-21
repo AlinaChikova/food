@@ -45,12 +45,12 @@ $chekout-border-color: #122835;
 		justify-content: space-between;
 		border-bottom: 2px solid $table-color;
 		height: 40px;
-
 		align-items: center;
+
 		p {
 			margin: 0;
 		}
-	};
+	}
 };
 
 .sum {
@@ -71,7 +71,7 @@ $chekout-border-color: #122835;
 
 	&::-moz-focus-inner {
 	 	border: 0;
-	};
+	}
 };
 
 .basket__left {

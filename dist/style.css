@@ -1,65 +1,3 @@
-html {
-  height: 100%;
-  background-color: #edebea;
-  background: url(https://image.freepik.com/free-photo/_7182-2053.jpg);
-  background-repeat: repeat;
-  background-size: 100%; }
-
-main {
-  display: flex;
-  justify-content: center; }
-
-header {
-  text-align: center; }
-
-.left {
-  width: 230px;
-  margin-left: 30px; }
-
-.frontpage {
-  flex-wrap: wrap;
-  flex-basis: auto;
-  display: flex;
-  padding-left: 40px; }
-header {
-  width: 100%;
-  min-height: 75px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.header {
-  text-transform: uppercase;
-  font: 40px Arial, sans-serif;
-  color: #444444; }
-.menu {
-  background: white;
-  font: 20px Arial, sans-serif;
-  font-stretch: condensed;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  border-radius: 7px;
-  box-shadow: 0 0 10px 1px grey; }
-  .menu__item {
-    height: 50px;
-    text-align: center;
-    vertical-align: middle; }
-    .menu__item:first-child a {
-      border-top-right-radius: 7px;
-      border-top-left-radius: 7px; }
-    .menu__item:last-child a {
-      border-bottom-right-radius: 7px;
-      border-bottom-left-radius: 7px; }
-  .menu__link {
-    text-decoration: none;
-    display: block;
-    color: black;
-    padding: 14px 0 14px 0; }
-    .menu__link:hover {
-      color: white;
-      background-color: #ffcd33; }
 .basket {
   width: 100%;
   background-color: #fdd55c;
@@ -121,6 +59,41 @@ header {
 
 .basket__left {
   margin-top: 30px; }
+
+.number {
+  width: 100%; }
+  .number p {
+    margin: 0px;
+    font: 12px Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px; }
+  .number__wrap {
+    display: flex;
+    justify-content: space-evenly; }
+  .number__window {
+    width: 45px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 1px 1px #bfbebc;
+    text-align: center;
+    font-size: 14px;
+    border: none; }
+  .number__button {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    padding: 0;
+    box-shadow: 0px 0px 1px 1px #bfbebc; }
+    .number__button::-moz-focus-inner {
+      border: 0; }
+    .number__button i {
+      font-size: 17px;
+      color: #cbcac9; }
+
 .card {
   width: 200px;
   display: flex;
@@ -174,42 +147,75 @@ header {
   text-transform: uppercase;
   border: none;
   border-bottom: 2px solid #664d00;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 0; }
   .card__add::-moz-focus-inner {
     border: 0; }
 
 .add-wrap {
   padding-top: 15px; }
-.number {
-  width: 100%; }
-  .number p {
-    margin: 0px;
-    font: 12px Arial, sans-serif;
-    text-transform: uppercase;
+
+.menu {
+  background: white;
+  font: 20px Arial, sans-serif;
+  font-stretch: condensed;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border-radius: 7px;
+  box-shadow: 0 0 10px 1px grey; }
+  .menu__item {
+    height: 50px;
     text-align: center;
-    line-height: 20px; }
-  .number__wrap {
-    display: flex;
-    justify-content: space-evenly; }
-  .number__window {
-    width: 45px;
-    height: 20px;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0px 0px 1px 1px #bfbebc;
-    text-align: center;
-    font-size: 12px;
-    padding-top: 5px; }
-  .number__button {
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    border: none;
-    background-color: white;
-    padding: 0;
-    box-shadow: 0px 0px 1px 1px #bfbebc; }
-    .number__button::-moz-focus-inner {
-      border: 0; }
-    .number__button i {
-      font-size: 17px;
-      color: #cbcac9; }
+    vertical-align: middle; }
+    .menu__item:first-child a {
+      border-top-right-radius: 7px;
+      border-top-left-radius: 7px; }
+    .menu__item:last-child a {
+      border-bottom-right-radius: 7px;
+      border-bottom-left-radius: 7px; }
+  .menu__link {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 14px 0 14px 0; }
+    .menu__link:hover {
+      color: white;
+      background-color: #ffcd33; }
+
+header {
+  width: 100%;
+  min-height: 75px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.header {
+  text-transform: uppercase;
+  font: 40px Arial, sans-serif;
+  color: #444444; }
+
+html {
+  height: 100%;
+  background-color: #edebea;
+  background: url(https://image.freepik.com/free-photo/_7182-2053.jpg);
+  background-repeat: repeat;
+  background-size: 100%; }
+
+main {
+  display: flex;
+  justify-content: center; }
+
+header {
+  text-align: center; }
+
+.left {
+  width: 230px;
+  margin-left: 30px; }
+
+.frontpage {
+  flex-wrap: wrap;
+  flex-basis: auto;
+  display: flex;
+  padding-left: 40px; }
