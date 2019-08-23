@@ -95,27 +95,30 @@
       color: #cbcac9; }
 
 .card {
-  width: 200px;
+  width: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 20px 30px 20px; }
   .card__name {
     font: 20px Arial, sans-serif;
-    line-height: 50px;
+    height: 80px;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .card__description {
-    height: 55px;
+    height: 60px;
     border-bottom: 2px solid #767675;
     border-top: 2px solid #767675;
     width: 100%;
     text-align: center;
-    padding-top: 5px; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .card__description a {
-      border-bottom: 2px solid #118ac2;
       color: #118ac2;
-      text-decoration: none;
       font: 15px Arial, sans-serif;
       font-weight: bold; }
   .card__price {
@@ -124,19 +127,21 @@
     line-height: 35px; }
 
 .market_image {
-  height: 60px; }
+  height: 50px;
+  padding-bottom: 10px; }
 
 .product {
   border-radius: 50%;
   background-color: white;
   border: 10px solid #ffc000;
+  box-shadow: 0 0 5px grey;
   width: 180px;
   height: 180px;
   align-items: center;
-  justify-content: center;
+  justify-content: cnter;
   display: flex; }
   .product__image {
-    height: 160px; }
+    border-radius: 50%; }
 
 .card__add {
   height: 30px;
@@ -148,7 +153,8 @@
   border: none;
   border-bottom: 2px solid #664d00;
   font-weight: bold;
-  padding: 0; }
+  padding: 0;
+  box-shadow: 0 0 5px grey; }
   .card__add::-moz-focus-inner {
     border: 0; }
 
@@ -179,7 +185,7 @@
     display: block;
     color: black;
     padding: 14px 0 14px 0; }
-    .menu__link:hover {
+    .menu__link:hover, .menu__link :focus {
       color: white;
       background-color: #ffcd33; }
 
@@ -214,7 +220,7 @@ header {
   width: 230px;
   margin-left: 30px; }
 
-.frontpage {
+#frontpage {
   flex-wrap: wrap;
   flex-basis: auto;
   display: flex;
