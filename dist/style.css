@@ -185,7 +185,7 @@
     display: block;
     color: black;
     padding: 14px 0 14px 0; }
-    .menu__link:hover, .menu__link :focus {
+    .menu__link:hover {
       color: white;
       background-color: #ffcd33; }
 

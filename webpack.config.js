@@ -7,8 +7,10 @@ const CopyWebpackPlugin= require('copy-webpack-plugin');
 module.exports = {
 	entry: './src/app.js',
 	output: {
-	path: path.resolve(__dirname, 'dist'),
-	filename: 'bundle.js'
+		path: path.resolve(__dirname, 'dist'),
+		filename: 'bundle.js',
+		libraryTarget: 'var',
+		library: 'app'
 	},
 	module: {
 		rules: [

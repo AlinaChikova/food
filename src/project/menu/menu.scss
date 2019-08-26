@@ -1,6 +1,5 @@
 $link-hover: #ffcd33;
 
-
 .menu {
 	background: white;
 	font:  20px Arial, sans-serif;
@@ -32,9 +31,16 @@ $link-hover: #ffcd33;
 		color: black;
 		padding: 14px 0 14px 0;	
 
-		&:hover {
+		&:hover, :active, :focus{
 			color: white;
 			background-color: $link-hover;
+			border: 0;
+			outline: 0;
+
+			&::-moz-focus-inner {
+			 	border: 0;
+			 	outline: none;
+			};
 		};
 	};
 };

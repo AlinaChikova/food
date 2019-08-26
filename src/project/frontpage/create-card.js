@@ -38,6 +38,11 @@ function createCard(categor) {
 	};
 };
 
- createCard("burgers");
+export default createCard;
 
- 
+
+
+// createCard("burgers");
+//exports.createCard = createCard;
+
+
