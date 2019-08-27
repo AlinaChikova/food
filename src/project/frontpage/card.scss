@@ -64,12 +64,12 @@ $add-border-color: #664d00;
 	width: 180px;
 	height: 180px;
 	align-items: center;
-	justify-content: cnter;
+	justify-content: center;
 	display: flex;
 
 	&__image {
-		// height: 140px;	
-		// width: 10px;	
+		height: 160px;	
+		width: 160px;	
 		border-radius: 50%;	
 	};
 }; 

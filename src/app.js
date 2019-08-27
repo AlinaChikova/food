@@ -4,35 +4,46 @@ import './project/test/test.js';
 import './project/main.scss';
 import createCard from './project/frontpage/create-card.js';
 
-function showContent(i,categor){	
-	let elementsMenu = document.querySelectorAll('.menu__link');
+// showContent(1,"shaurma");
 
-	elementsMenu[i].addEventListener("click", ()=>{
+// function showContent(i,categor){	
+// 	let elementsMenu = document.querySelectorAll('.menu__item');
 
-		$("div.card").remove();
-		createCard(categor);  
-		event.preventDefault();
+// 	elementsMenu[i].addEventListener("click", ()=>{
+// 		$("div.card").remove();
+// 		createCard(categor);  		
+// 		event.preventDefault();
+	
+// 		for (let elem of elementsMenu) {
+// 			elem.classList.remove('active');
+// 		};
 
-		for (let j = 0; j<elementsMenu.length; j++) {
-			elementsMenu[j].style['color'] = 'black';
-			elementsMenu[j].style['background-color'] = 'white';		
-		};	
-		
-		elementsMenu[i].style['background-color'] = '#ffcd33';
-		elementsMenu[i].style['color'] = 'white';
-	});
-};
+// 		elementsMenu[i].classList.add('active');	
+// 	});
+// };
 
-showContent(0,'pizza');
-showContent(1,'shaurma');
-showContent(2,'sandwiches');
-showContent(3,'burgers');
-showContent(4, 'chicken');
-showContent(5, 'drinks');
-showContent(6, 'salads');
+// let menu = ['pizza','shaurma','sandwiches','burgers','chicken','drinks','salads'];
+
+// for (let i = 0; i< menu.length; i++) {
+// 	 showContent(i,menu[i]);
+// };
+
+createCard('pizza');
+const menu = ['pizza','shaurma','sandwiches','burgers','chicken','salads','drinks'];   
+const elementsMenu = document.querySelectorAll('.menu__item'); 
+
+$('.menu__item').on('click', function () {
+    let indexMenuItem = $(this).index();
+
+	$("div.card").remove();
+	createCard(menu[indexMenuItem]);  		
+	event.preventDefault();
+
+	document.querySelector('.active').classList.remove('active');
+	elementsMenu[indexMenuItem].classList.add('active');	  
+});
 
 
-
-
-
-
+let a =document.getElementById('#checkout');
+let b = a.dateset.id;
+alert(b);
