@@ -12,7 +12,7 @@ function createCard(categor) {
 				imageSrc = data.markets[ data.menu[i].market].image;
 			}
 			parent.insertAdjacentHTML('beforeend',
-				`<div class="card" >
+				`<div class="card">
 					<div class="market">
 	                        <img class="market_image" src="${imageSrc}">
 	                </div>

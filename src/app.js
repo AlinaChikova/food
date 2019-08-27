@@ -44,6 +44,3 @@ $('.menu__item').on('click', function () {
 });
 
 
-let a =document.getElementById('#checkout');
-let b = a.dateset.id;
-alert(b);
