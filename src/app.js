@@ -2,10 +2,10 @@
 
 import './project/test/test.js';
 import './project/main.scss';
+// import './project/frontpage/create-content.js';
 import createCard from './project/frontpage/create-card.js';
 
 createCard('pizza');
-
 
 const menu = ['pizza','shaurma','sandwiches','burgers','chicken','salads','drinks'];   
 const elementsMenu = document.querySelectorAll('.menu__item'); 
@@ -21,14 +21,14 @@ $('.menu__item').on('click', function () {
 	elementsMenu[indexMenuItem].classList.add('active');	  
 });
 
-$('.plus').on('click', function () {
+$(document).on('click', '.plus', function () {
 	let el =  $(this).parent().parent().parent()[0].id;	
    	let a = document.getElementById(el).querySelector('.number__window');
    	a.value++;   	
 });
 
 
-$('.minus').on('click', function () {
+$(document).on('click', '.minus', function () {
    	let numberValue = $(this).parent().find(".number__window");   
    	if (numberValue[0].value > 0) numberValue[0].value--; 
 });
@@ -36,13 +36,13 @@ $('.minus').on('click', function () {
 
 let basket = []
 
-$('.card__add').on('click', function () {
+$(document).on('click', '.card__add', function () {
 
 	let a =  $(this).parent().parent()[0].id;
 	console.log(a);
-	// debugger;
+	debugger;
 	let number = document.getElementById(a).querySelector('.number__window');
-	let name = document.getElementById(a).querySelector('.card__price'); 
+	let name = document.getElementById(a).querySelector('.card__name'); 
 	let price = document.getElementById(a).querySelector(".card__price-value"); 
 
 	let basketItem = {

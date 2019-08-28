@@ -39,6 +39,7 @@ function createCard(categor) {
             );				
 		};
 	};
+	
 };
 
 export default createCard;
