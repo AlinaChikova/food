@@ -2,7 +2,7 @@
 const data = require('../../data.json');
 
 function createCard(categor) {
-	let card = document.createElement('div');	
+	// let card = document.createElement('div');	
 	let parent = document.getElementById('frontpage');
 
 	for (let i = 0; i < data.menu.length; i++) {
@@ -12,7 +12,7 @@ function createCard(categor) {
 				imageSrc = data.markets[ data.menu[i].market].image;
 			}
 			parent.insertAdjacentHTML('beforeend',
-				`<div class="card">
+				`<div class="card" id="${data.menu[i].category}-${i}">
 					<div class="market">
 	                        <img class="market_image" src="${imageSrc}">
 	                </div>
@@ -23,7 +23,7 @@ function createCard(categor) {
 	                <div class="card__description">
 	                    <a href="">${data.menu[i].description}</a>
 	                </div>
-	                <div class="card__price">Цена: ${data.menu[i].price} руб.</div>
+	                <div class="card__price">Цена: <span class="card__price-value">${data.menu[i].price}</span> руб.</div>
 	                <div class="number">
 	                    <p>количество</p>
 	                    <div class="number__wrap">
