@@ -2,15 +2,18 @@
 const data = require('../../data.json');
 
 function createCard(categor) {
-	// let card = document.createElement('div');	
 	let parent = document.getElementById('frontpage');
 
-	for (let i = 0; i < data.menu.length; i++) {
+	for (let i = 0; i < data.menu.length; i++) {		
 		if (data.menu[i].category == categor) {
 			let imageSrc = '';
 			if (data.markets[ data.menu[i].market] !== undefined) {
-				imageSrc = data.markets[ data.menu[i].market].image;
-			}
+				imageSrc = data.markets[ data.menu[i].market].image; 
+			};
+
+			let description = (categor == "sandwiches") ? 
+				`<a href="#overlay" class="card__description link">${data.menu[i].description}</a>`:`${data.menu[i].description}`;								
+			
 			parent.insertAdjacentHTML('beforeend',
 				`<div class="card" id="${data.menu[i].category}-${i}">
 					<div class="market">
@@ -21,7 +24,7 @@ function createCard(categor) {
 	                </div> 
 	                <div class="card__name">${data.menu[i].name}</div>
 	                <div class="card__description">
-	                    <a href="">${data.menu[i].description}</a>
+	                   ${description}
 	                </div>
 	                <div class="card__price">Цена: <span class="card__price-value">${data.menu[i].price}</span> руб.</div>
 	                <div class="number">
@@ -38,15 +41,10 @@ function createCard(categor) {
                 </div>`
             );				
 		};
-	};
-	
+	};	
 };
 
 export default createCard;
 
-
-
-// createCard("burgers");
-//exports.createCard = createCard;
 
 

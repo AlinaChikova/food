@@ -1,0 +1,36 @@
+$popup-button: #e6614c;
+
+.popup-menu {
+	display: flex;
+	// width: 750px;
+	height: 50px;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: space-around;
+	font:  20px Arial, sans-serif;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background-color: white;
+
+	li {
+		line-height: 50px;
+		text-align: center;
+		width: 100%;
+
+		&:first-child  {
+			border-top-left-radius: 5px; 
+			border-bottom-left-radius: 5px; 
+		}
+		&:last-child  {
+			border-bottom-right-radius: 5px; 
+			border-top-right-radius: 5px; 
+		}
+	}
+	
+};
+
+.menu-active {
+	background-color: $popup-button;
+	color: white;
+}

@@ -15,7 +15,6 @@ $link-hover: #ffcd33;
 	border-radius: 7px;
 	box-shadow:0 0 10px 1px grey;
 
-
 	&__item {
 		line-height: 50px;
 		text-align: center;		
@@ -37,7 +36,7 @@ $link-hover: #ffcd33;
 			transition-duration: 0.2s; 
 			transition-timing-function: ease-in-out;	
 		}
-	};
+	}
 };
 
 .active {

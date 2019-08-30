@@ -11,6 +11,30 @@
          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
     </head>
     <body>
+             <div id="overlay">
+         <div id="popup">
+            <div class="popup-head">
+                <p class="title">Выберите размер</p>
+                <a class="head__close" href="#">&times;</a>
+            </div>
+           
+            <div class="content">
+                <ul class="popup-menu">
+                    <li class="menu-active">Размер</li>
+                    <li>Хлеб</li>
+                    <li>Овощи</li>
+                    <li>Соусы</li>
+                    <li>Начинка</li>
+                    <li>Готово!</li>
+                </ul>
+                <div class="button-wrap">
+                    <button class="popup-button back">&#8249;<p>назад</p></button>
+                    <button class="popup-button forward"><p>вперед</p>&#8250;</button>
+                </div>
+                <div class="content-card"></div>
+            </div>
+        </div>
+     </div>
         <header>
             <span class="header">сделайте заказ напрямую из ресторана</span>
         </header>
@@ -37,18 +61,16 @@
                             <div class="list-title">
                                 <p>Название</p>
                                 <p>Количество</p>
-                            </div>
-                            
+                            </div>                            
                         </div>
                         <span class="sum">Итого: <span class="sum-value">0</span> руб.</span>
                         <button class="checkout">Оформить заказ</button>
                     </div>
                 </div>
-            </div>
-
-            <div id="frontpage">
 
             </div>
+
+            <div id="frontpage"></div>
 
         </main>
 

@@ -1,0 +1,30 @@
+$popup-button: #e6614c;
+
+.popup-button {
+	width: 135px;
+	height: 30px;
+	background-color: $popup-button;
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	p{
+		margin: 0;
+		font-width: bold;
+		float: left;
+	}
+		&::-moz-focus-inner {
+	 	border: 0;
+	}
+}
+
+
+
+.button-wrap {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+}

@@ -6,12 +6,15 @@ $card-color: #ffc000;
 $price-color: #e76752;
 $add-border-color: #664d00;
 
+
+
+
 .card {
 	width: 220px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 0 20px 30px 20px;
+	padding: 10px 20px 30px 20px;
 
 	&__name {
 		font:  20px Arial, sans-serif;
@@ -21,25 +24,26 @@ $add-border-color: #664d00;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		border-bottom: 2px solid $description-color;
 	}
 
 	&__description {
 		height: 60px;
 		border-bottom: 2px solid $description-color;
-		border-top: 2px solid $description-color;
+		// border-top: 2px solid $description-color;
 		width: 100%;
-		text-align: center;
-		// padding-top: 5px;
+		text-align: center;	
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		color: black;
+		font: 15px Arial, sans-serif;	
+		font-weight: bold;
 
-		a {
-			// border-bottom: 2px solid $description-link-color;
-			color: $description-link-color;
-			// text-decoration: none;
-			font: 15px Arial, sans-serif;	
-			font-weight: bold;
+		a {			
+			outline: none;
+			color: $description-link-color;	
+			text-decoration: underline;
 		}
 	}
 
@@ -96,10 +100,20 @@ $add-border-color: #664d00;
 		transition-duration: 0.1s; 
 		transition-timing-function: ease-out;
 	} 
-
-
 };
 
 .add-wrap {
 	padding-top: 15px;
 };
+
+.modalcard-active {
+	background-color: #fdd55c;
+	border-radius: 5px;
+	box-shadow:0 0 10px 1px grey;
+}
+
+
+
+.modalcard {
+	margin-bottom: 25px;
+}

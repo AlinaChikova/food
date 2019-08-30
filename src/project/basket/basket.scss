@@ -80,13 +80,14 @@ $chekout-border-active: #122835;
 .active-checkout {
 	background-color: $checkout-color-active;
 	border-bottom: 2px solid $chekout-border-active;
+	
 	&:active {
 		background-color: $chekout-border-active;
 		box-shadow: 0 0 7px $chekout-border-active;
 		transition-duration: 0.3s; 
 		transition-timing-function: ease-out;
 	}
-}
+};
 
 .basket__left {
 	margin-top: 30px;
