@@ -5,7 +5,7 @@
 $head-color: #ffc000;
 
 #overlay {
-	position: absolute;
+	position: fixed;
 	
 	top: 0;
 	bottom: 0;
@@ -13,14 +13,15 @@ $head-color: #ffc000;
   	right: 0;
   	z-index: 1; 
   	display: flex;
+  	align-content: center;
   	justify-content: center;
-  	// align-items: center;
+  	align-items: center;
 	overflow: hidden;
  	background: rgba(0,0,0,0.5);
 	transition: opacity 200ms;
     visibility: hidden;
 	opacity: 0;
-	padding: 150px;
+	// padding: 100px;/
 
 	&:target {
 	    visibility: visible;
@@ -29,7 +30,7 @@ $head-color: #ffc000;
 };
 
 #popup {
-	// position: absolute;
+	position: absolute;
 	width: 850px;
 	z-index: 2;
 	height: auto;
@@ -37,15 +38,17 @@ $head-color: #ffc000;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
-	align-items: stretch;
-	align-self: start;
+	// align-items: stretch;
+	// align-self: start;
+
 }
 
 
 .content {
 	// overflow: hidden;    
     // overflow: auto;
-    padding: 40px 25px 0 25px;
+    padding: 20px 25px 10px 25px;
+    	max-height: 790px;
 
  
  
