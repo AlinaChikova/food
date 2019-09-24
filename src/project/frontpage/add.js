@@ -8,7 +8,7 @@ import '../basket/chandeBasket.js';
 
 let basket = [];
 
-$(document).on('click', '.card__add', function () {
+$(document).on('click', '.card__add-main', function () {
 	let el =  $(this).parent().parent()[0].id;
 
 	let basketItem = {
@@ -31,3 +31,17 @@ $(document).on('click', '.card__add', function () {
 	changeBasket(basket);
 });
 
+
+
+$(document).on('click', '.add_popup', function () {
+	// let el =  $(this).parent().parent()[0].id;
+
+	let basketItem = {
+   		number: document.querySelector('.number__window').value,
+   		name: document.querySelector('.ready-description-name').innerText,
+   		price: document.querySelector(".card__price-value").innerText,
+   		
+	};	
+ basket.push(basketItem);
+	changeBasket(basket);
+});

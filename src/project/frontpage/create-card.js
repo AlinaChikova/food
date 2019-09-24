@@ -36,7 +36,7 @@ function createCard(categor) {
 	                    </div>
 	                </div>
 	                <div class="add-wrap">
-	                    <button class="card__add">в корзину</button>
+	                    <button class="card__add-main">в корзину</button>
 	                </div>
                 </div>`
             );				
